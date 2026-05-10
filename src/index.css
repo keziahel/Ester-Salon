@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+/* Custom Variables */
+:root {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+
+  --color-brand-cream: #FAF7F2;
+  --color-brand-brown: #4A443F;
+  --color-brand-accent: #C4A484;
+  --color-brand-border: #E8E2D9;
+  --color-brand-muted-bg: #F3EFEC;
+  --color-brand-arch: #F5E6DA;
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--color-brand-cream);
+  color: var(--color-brand-brown);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Utility Classes */
+.serif {
+  font-family: var(--font-serif);
+}
+
+.accent-line {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-brand-accent),
+    transparent
+  );
+}
+
+.arch-mask {
+  border-radius: 500px 500px 0 0;
+}
